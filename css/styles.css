@@ -12,6 +12,7 @@ background: #2F303A;
     --accent-color:#2196F3;
     --background-color:#F5F4FA;
     --background-color-footer:#2F303A;
+    --color-white: #fff;
 
     
 }
@@ -295,7 +296,7 @@ ul {
  }
  .team-item{
 width: 270px;
-height: 368px;
+/* height: 368px; */
 left: 815px;
 top: 1632px;
 background: #FFFFFF;
@@ -325,6 +326,47 @@ border-radius: 0px 0px 4px 4px;
 .team-dop{
     padding: 30px 0;
    
+}
+/* Наша команда -- соц сети */
+.team-cot{
+padding: 16px 32px 30px 32px;
+    
+}
+.team-cot-link{
+    color:  #AFB1B8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background:var(--color-white);
+
+}
+.team-cot-link:hover, .footer-cot-link:focus{
+   background-color: var(--accent-color);
+   color: var(--color-white);
+}
+.team-cot-icon{
+    fill: currentColor;
+}
+.team-cot-list{
+    display: flex;
+ 
+}
+.team-cot-item:not(:last-child){
+    margin-right: 10px;
+}
+/* ПОСТОЯННЫЕ КЛИЕНТЫ */
+.klients-title{
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+margin-bottom: 50px;
+color: var(--primary-text-color);
 }
 /* ----------------футер-подвал ------------------*/
 .footer-mail, .footer-tel{
@@ -384,6 +426,10 @@ border-radius: 0px 0px 4px 4px;
 .address{
     display:block;
 }
+
+/* Социалные сети в футере */
+
+
 /* присойденяйтесь */
 .title-cot-seti{
 display: block;
@@ -393,12 +439,31 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-
 color: #FFFFFF;
+margin-bottom: 20px;
 }
-/* соц сети */
+.footer-cot-link{
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+
+}
+.footer-cot-link:hover, .footer-cot-link:focus{
+   background-color: var(--accent-color);
+}
 .footer-cot-icon{
-    full:var(--background-color)
+    fill: currentColor;
+}
+.footer-cot-list{
+    display: flex;
+}
+.footer-cot-item:not(:last-child){
+    margin-right: 10px;
 }
 /*  -------PORTFOLIO------------------- */
 .button{
