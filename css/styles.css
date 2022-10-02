@@ -108,7 +108,8 @@ ul {
 }
 
 .header-mail, .header-tel {
-    display: block;
+    display:flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px; 
     font-weight: 500;
@@ -123,6 +124,7 @@ ul {
 .kontakt{
     display: flex;
     margin-left: auto;
+    justify-content: center;
 }
 .contakt-item:not(:last-child){
     margin-right: 50px;
@@ -130,6 +132,11 @@ ul {
 .header-menu{
     display: flex;
     align-items: center;
+}
+/* иконки в контактах в шапке */
+.kontakt-icon{
+    fill: currentColor;
+    margin-right: 10px;
 }
 
 /* -------------шапка в mane--------------- */
@@ -207,7 +214,7 @@ ul {
 .property-item{
     width: 270px;
 }
- .property-item::before{
+ /* .property-item::before{ 
     display:block;
     content:"";
     height: 120px;
@@ -229,19 +236,27 @@ ul {
     background-image: url(../images/diagram\ 1.svg);
 }
 .icon-astranavt::before{
-    background-image: url(../images/astronaut\ 1.svg); }
+background-image: url(../images/astronaut\ 1.svg); } */
 
 .property-item:not(:last-child){
     margin-right: 30px;
-}   
+}    
 
-/* .icon{
-    width: !00%;
-    height: 100%;
-    background-color:red;
+ .icon-link{
+    color: var(--primary-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:var(--background-color);
+    width: 270px;
+    height: 120px;
+    border:none;
     border-radius: 4px;
-    outline: 2p solid red;
-} */
+
+}
+.icon-sot{
+    fill: currentColor;
+}
 .property-titles{
     font-weight: 700;
     font-size: 14px;
