@@ -368,6 +368,31 @@ letter-spacing: 0.03em;
 margin-bottom: 50px;
 color: var(--primary-text-color);
 }
+      .klients-link{
+        color:  #AFB1B8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:var(--color-white);
+        width: 170px;
+        height: 92px;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+    }
+    .klients-link:hover, .klientst-link:focus{
+       color: var(--accent-color);
+       border-color: var(--accent-color);
+    }
+    .klients-icon{
+        fill: currentColor;
+    }
+    .klients-list{
+        display: flex;
+     
+    }
+    .klients-item:not(:last-child){
+        margin-right: 30px;
+    }  
 /* ----------------футер-подвал ------------------*/
 .footer-mail, .footer-tel{
     display: inline-block;
