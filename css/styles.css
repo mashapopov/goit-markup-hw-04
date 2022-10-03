@@ -309,10 +309,10 @@ background-image: url(../images/astronaut\ 1.svg); } */
  }
  .team-list{
     display: flex;
+    
  }
  .team-item{
 width: 270px;
-/* height: 368px; */
 left: 815px;
 top: 1632px;
 background: #FFFFFF;
@@ -337,17 +337,18 @@ border-radius: 0px 0px 4px 4px;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--titl-text-color);
-    padding-top: 10px;
+    padding-top: 10px; 
   }
-.team-dop{
+ .team-dop{
     padding: 30px 0;
+    text-align: center;
    
-}
-/* Наша команда -- соц сети */
-.team-cot{
-padding: 16px 32px 30px 32px;
+
+/* Наша команда -- соц сети  */
+/* .team-cot{
+padding: 16px 32px 30px 32px; */
     
-}
+} 
 .team-cot-link{
     color:  #AFB1B8;
     display: flex;
@@ -359,7 +360,7 @@ padding: 16px 32px 30px 32px;
     background:var(--color-white);
 
 }
-.team-cot-link:hover, .footer-cot-link:focus{
+.team-cot-link:hover, .team-cot-link:focus{
    background-color: var(--accent-color);
    color: var(--color-white);
 }
@@ -368,6 +369,10 @@ padding: 16px 32px 30px 32px;
 }
 .team-cot-list{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+  
  
 }
 .team-cot-item:not(:last-child){
@@ -399,7 +404,7 @@ color: var(--primary-text-color);
         border: 1px solid #AFB1B8;
         border-radius: 4px;
     }
-    .klients-link:hover, .klientst-link:focus{
+    .klients-link:hover, .klients-link:focus{
        color: var(--accent-color);
        border-color: var(--accent-color);
     }
@@ -502,7 +507,8 @@ margin-bottom: 20px;
     background: rgba(255, 255, 255, 0.1);
 
 }
-.footer-cot-link:hover, .footer-cot-link:focus{
+.footer-cot-link:hover, 
+.footer-cot-link:focus{
    background-color: var(--accent-color);
 }
 .footer-cot-icon{
